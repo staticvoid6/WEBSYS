@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainHeader" id="mainHeader">
+        <h1>Where Comfort Meets Convenience</h1>
+    </div>
+    
+    <div class="mainNav">
+        <div class="logo">
+            <img src="logo/460958634_725012433142866_8485649445692874753_n.png" alt="logo">
+        </div>
+        <div class="searchBar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="accounts" id="accounts">
+            <button onclick="accountsDropDown()">Account</button>
+            <div id="dropdown">
+                <button onclick="logInPopUp()">LogIn</button>
+                <button onclick="signUpPopUp()">SignUp</button>
+                <hr>
+                <button onclick="changeTheme()" id="changeMode">Dark mode</button>
+                <button onclick="updateContent()" id="changeMode">Change header</button>
+                <hr>
+                <button onclick="support()">Support</button>
+            </div>
+        </div>
+
+        <div class="sideNav">
+            <h4 class="filters">Filters</h4>
+            <div class="counter">
+                <button id="counter">Start countdown</button>
+                <p id=time>60s</p>
+            </div>
+            <div class="location">
+                <h4>Location</h4>
+                <div>La Trinidad ></div>
+            </div>
+            <div class="propertyType">
+                <h4>Property Type</h4>
+                <input type="radio" name="propertyType" id="anyType" checked>
+                <label for="anyType">Any type</label>
+                <input type="radio" name="propertyType" id="house">
+                <label for="house">House</label>
+                <input type="radio" name="propertyType" id="apartment">
+                <label for="apartment">Apartment</label>
+                <input type="radio" name="propertyType" id="guestHouse">
+                <label for="guestHouse">Guest House</label>
+                <input type="radio" name="propertyType" id="hotel">
+                <label for="hotel">Hotel</label>
+            </div>
+            <div class="rooms">
+                <h4>Rooms and Beds</h4>
+                <div>
+                    Bedrooms
+                    <div class="number">
+                        <span class="minus" onclick="minus('bedrooms')">-</span>
+                        <span class="num" id="numBedrooms">1</span>
+                        <span class="add" onclick="add('bedrooms')">+</span>
+                    </div>
+                </div>
+                <div>
+                    Beds
+                    <div class="number">
+                        <span class="minus" onclick="minus('beds')">-</span>
+                        <span class="num" id="numBeds">1</span>
+                        <span class="add" onclick="add('beds')">+</span>
+                    </div>
+                </div>
+                <div>
+                    Bathrooms
+                    <div class="number">
+                        <span class="minus" onclick="minus('bathrooms')">-</span>
+                        <span class="num" id="numBathrooms">1</span>
+                        <span class="add" onclick="add('bathrooms')">+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="amenities">
+                <h4>Amenities</h4>
+                <input type="checkbox" name="amenities" id="WiFi">
+                <label for="WiFi">WiFi</label>
+                <input type="checkbox" name="amenities" id="AirConditioning">
+                <label for="AirConditioning">Air Conditioning</label>
+                <input type="checkbox" name="amenities" id="Heating">
+                <label for="Heating">Heating</label>
+                <input type="checkbox" name="amenities" id="HotWater">
+                <label for="HotWater">Hot Water</label>
+                <input type="checkbox" name="amenities" id="Kitchen">
+                <label for="Kitchen">Kitchen</label>
+                <input type="checkbox" name="amenities" id="Washer">
+                <label for="Washer">Washer</label>
+                <input type="checkbox" name="amenities" id="Dryer">
+                <label for="Dryer">Dryer</label>
+                <div class="seeMore">
+                    <input type="checkbox" name="amenities" id="Parking">
+                    <label for="Parking">Parking</label>
+                </div>
+                <div class="seeMore">
+                    <input type="checkbox" name="amenities" id="Pool">
+                    <label for="Pool">Swimming Pool</label><br>
+                </div>
+                <div class="seeMore">
+                    <input type="checkbox" name="amenities" id="Gym">
+                    <label for="Gym">Gym</label><br>
+                </div>
+                <div class="seeMore">
+                    <input type="checkbox" name="amenities" id="Balcony">
+                    <label for="Balcony">Balcony</label><br>
+                </div><div class="seeMore">
+                    <input type="checkbox" name="amenities" id="Fireplace">
+                    <label for="Fireplace">Fireplace</label><br>
+                </div>
+                <div class="seeMore">
+                    <input type="checkbox" name="amenities" id="CableTV">
+                    <label for="CableTV">Cable TV</label><br>
+                </div>
+                
+                <p id="seeMore" onclick="seeMore()">See more</p>
+            </div>
+            <div class="aboutUs">
+                <h4>About us</h4>
+                <p>Terms of Use</p>
+                <p>Privacy and Cookies Statement</p>
+                <p>How This Site Works</p>
+                <p>Copyright</p>
+                <p>Contact us</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="mainContent">
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+            <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+              <a href="index2.html" target="_blank">
+                <div class="thumbnail">
+                    <div class="thumbnailImage">
+                        <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                    </div>
+                    <div class="thumbnailInfo">
+                        <p class="area">La Trinindad, Benguet</p>
+                        <p class="rating">4.5 stars</p>
+                        <p class="distance">2 kilometers away</p>
+                        <p><span class="price">1000Php</span> month</p>
+                    </div>
+               </div>
+            </a>
+        </div>
+
+    <div id="overlay" onclick="exitPopUp()"></div>
+
+    <div id="logInWrapper">
+    <form onsubmit="logIn(event)">
+        <h1>LogIn</h1>
+
+        <div>
+            <p class="signUp">Don't have an account? <span onclick="changeToSignUp()">SignUp</span></p>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" id="email" placeholder="Username" required>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="submitButtonWrapper">
+            <button type="submit" class="btn">Login</a></button>
+            <button class="btn">Forgot Password?</button>
+        </div>
+        
+        <p class="or">or logIn with</p>
+
+        <div class="loginOptionWrapper">
+            <button class="loginOption">Google</button>
+            <button class="loginOption">Facebook</button>
+        </div>
+    </form>
+    </div> 
+
+    <div id="signUpWrapper">
+    <form onsubmit="signUp(event)">
+        <h1>SignUp</h1>
+
+        <div class="inputBox">
+            <input type="email" placeholder="Username" required>
+        </div>
+
+        <div class="inputBox">
+            <input type="number" id="phoneNumber"  placeholder="Phone number" required>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="submitButtonWrapper">
+            <button type="submit" class="btn">Create account</button>
+        </div>
+        
+        <p class="or">or logIn with</p>
+
+        <div class="loginOptionWrapper">
+            <button class="loginOption">Google</button>
+            <button class="loginOption">Facebook</button>
+        </div>
+    </form>
+    </div> 
+    
+   <script src="index.js"></script>
+</body>
+</html>

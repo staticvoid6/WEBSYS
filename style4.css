@@ -1,0 +1,239 @@
+.headNav {
+    position: sticky;
+    width: 100%;
+    height: 90px;
+    display: none;
+    background: white;
+    border-bottom: 1px solid lightgray;
+    z-index: 2;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortcut a{
+    color: black;
+}
+
+.mainNav2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    width: 100vw;
+    height: 90px;
+    max-width: 100%;
+    z-index: 2;
+}
+
+.subMainNav {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shortcut {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 17px;
+}
+
+.shortcut div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.roomWrapper {
+    margin-right: 17px;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roomHeader {
+    width: 1000px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.roomImage {
+    position: relative;
+    margin-bottom: 30px;
+    height: 550px;
+    width: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.roomImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+img.displaySlide {
+    display: block;
+}
+
+.roomImage button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    background: rgba(211, 211, 211, 0.5); ;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.roomInfo {
+    color: black;
+    margin-bottom: 30px;
+    display: flex;
+    width: 1000px;
+}
+
+.textInfo {
+    width: 65%;
+    padding-right: 5%;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.underline:hover {
+ cursor: pointer;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+}
+
+.centerText {
+    display: block;
+    margin: auto;
+}
+
+.rentRoom {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 20px;
+    width: 35%;
+    height: 350px;
+    border: 1px solid lightgray;
+}
+
+.price {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.date {
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%; 
+    display: flex;
+}
+
+.date div {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.date div:hover {
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+
+.date div:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.date div:first-child:hover {
+    border: 1px solid black;
+}
+
+.date div:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.date div:last-child:hover {
+    border: 1px solid black;
+}
+
+.tenants {
+    margin-bottom: 30px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid lightgray;
+    width: 100%; 
+    height: 50px;
+    border-radius: 10px;
+}
+
+.tenants:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.rent {
+    font-size: 1.5em;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.rent:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.reviewContainer {  
+    color: black;
+    width: 800px;
+}
+
+.reviews {
+    padding: 20px;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="headNav" class="headNav">
+        <div class="shortcut">
+            <div><a href="#photos" onclick="smoothScroll(event, 'photos')">Photos</a></div>
+            <div><a href="#overview" onclick="smoothScroll(event, 'overview')">Overview</a></div>
+            <div><a href="#amenities" onclick="smoothScroll(event, 'amenities')">Amenities </a></div>
+            <div><a href="#reviews" onclick="smoothScroll(event, 'reviews')">Reviews </a></div>
+        </div>
+    </div>
+     
+    <div class="mainNav2">
+        <div class="subMainNav">
+            <div class="logo">
+                <img src="logo/460958634_725012433142866_8485649445692874753_n.png" alt="logo">
+            </div>
+            <div class="searchBar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="accounts">
+                <button onclick="accountsDropDown()">Account</button>
+                <div id="dropdown">
+                    <button onclick="logInPopUp()">LogIn</button>
+                    <button onclick="signUpPopUp()">SignUp</button>
+                    <hr>
+                    <button onclick="changeTheme()" id="changeMode">Dark mode</button>
+                    <hr>
+                    <button onclick="support()">Support</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="roomWrapper">
+        <div class="roomHeader">
+            <h1 id="photos">Room Title</h1>
+        </div>
+   
+        <div class="roomImage">
+            <div class="rooms">
+                <img src="images/pexels-photo-106399.jpeg" alt="house-image">
+                <img src="images/pexels-photo-1571462.png" alt="house-image">
+                <img src="images/pexels-photo-1454806.png" alt="house-image">
+                <img src="images/pexels-photo-186077.jpeg" alt="house-image">
+                <img src="images/200522-EB_12-Living-Room_1267-b13debcb440a4471981d7ac637e76e7a.png" alt="house-image">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+
+        <div class="roomInfo">
+            <div class="textInfo">
+                <h2 id="overview">Overview</h2>
+                <br>
+                <p>ratings = 4.5 : <span class="underline">200 reviews</span></p>
+                <br>
+                <p>basic info</p>
+                <br><hr><br>
+                <div class="host">
+                    <div class="profile"></div>
+                    <h3>Host</h3>
+                </div>
+                <br>
+                <p>Host info</p>
+                <br><hr><br>
+                <p>Room info:</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora mollitia necessitatibus consequuntur iure aliquam, voluptas repudiandae beatae, molestiae vitae nostrum veniam maxime! Tempore officiis necessitatibus, in sint totam dicta corporis. </p>
+                <br>
+                <p><span class="underline">Show more</span> ></p>
+                <br><hr><br>
+                <h3 id="amenities">What this room offers</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, doloribus assumenda rem voluptate minus deleniti? Possimus quas rem deleniti accusamus iste, alias beatae adipisci reiciendis, saepe dolore atque quia quaerat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum accusantium ea consequuntur fuga sunt dolorum odio impedit iure, voluptates at dignissimos atque voluptatibus dolore, eum, saepe reiciendis. Modi, error?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at dolore reiciendis quisquam facere, ut nam laudantium eveniet, vel corrupti dolores! Asperiores animi maxime nemo provident ducimus nam odit ratione?</p>
+                <br>
+            </div>
+            <div class="rentRoom">
+                <div class="price">5000Php per month</div>
+                <div class="date">
+                    <div><p class="centerText">Start date</p></div>
+                    <div><p class="centerText">End date</p></div>
+                </div>
+                <div class="tenants">
+                    <p class="centerText">Tenants</p>
+                </div>
+                <div class="rent"><p class="centerText">Rent</p></div>
+            </div>
+        </div>
+
+        <div class="reviewContainer">
+            <hr><br>
+            <h3 id="reviews">Reviews</h3>
+            <br>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+            <hr>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+            <hr>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+            <hr>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+            <hr>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+            <hr>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+            <hr>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+            <hr>
+            <div class="reviews">
+                <div class="profile"></div>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, magni sint officia repudiandae, perspiciatis quisquam minima, nisi voluptatum deleniti enim nam fugiat praesentium blanditiis mollitia sit doloremque id possimus beatae?</p>
+            </div>
+        </div>
+    </div>
+
+     <div id="overlay" onclick="exitPopUp()"></div>
+     
+     <div id="logInWrapper">
+    <form action="">
+        <h1>LogIn</h1>
+
+        <div>
+            <p class="signUp">Don't have an account? <span onclick="changeToSignUp()">SignUp</span></p>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" placeholder="Username" required>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="submitButtonWrapper">
+            <button type="submit" class="btn">Login</button>
+            <button class="btn">Forgot Password?</button>
+        </div>
+        
+        <p class="or">or logIn with</p>
+
+        <div class="loginOptionWrapper">
+            <button class="loginOption">Google</button>
+            <button class="loginOption">Facebook</button>
+        </div>
+    </form>
+    </div> 
+
+    <div id="signUpWrapper">
+    <form action="">
+        <h1>SignUp</h1>
+
+        <div class="inputBox">
+            <input type="email" placeholder="Username" required>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="inputBox">
+            <input type="password" placeholder="Confirm password" required>
+        </div>
+
+        <div class="submitButtonWrapper">
+            <button type="submit" class="btn">Create account</button>
+        </div>
+        
+        <p class="or">or logIn with</p>
+
+        <div class="loginOptionWrapper">
+            <button class="loginOption">Google</button>
+            <button class="loginOption">Facebook</button>
+        </div>
+    </form>
+    </div> 
+    
+   <script src="index.js">
+   </script>
+</body>
+</html>
